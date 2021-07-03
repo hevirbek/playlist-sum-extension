@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Playlist Sum",
+    "description": "A plugin that show total time of a Youtube playlist",
+    "version": "1.0",
+    "icons": {
+        "16": "ico16.png",
+        "32": "ico32.png",
+        "48": "ico48.png",
+        "128": "ico128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/playlist*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
